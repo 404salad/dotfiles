@@ -4,22 +4,22 @@
 cd ~
 sudo mkdir 	
 # essentials apps
-sudo apt install neovim
-sudo apt install firefox
-sudo apt install vlc
-sudo apt install audacity
-sudo apt install gimp
-sudo apt install gedit
+sudo apt install neovim -y
+sudo apt install firefox -y
+sudo apt install vlc -y
+sudo apt install audacity -y
+sudo apt install gimp -y
+sudo apt install gedit -y
 
 # coding
-sudo apt install tmux
-sudo apt install build-essential 
-sudo apt install rustc
-sudo apt install cargo
-sudo cargo install porsmo
+sudo apt install tmux -y
+sudo apt install build-essential -y
+sudo apt install rustc -y
+sudo apt install cargo -y
+sudo cargo install porsmo -y
 
 #for gnome themes	
-sudo apt install gnome-tweaks
+sudo apt install gnome-tweaks -y
 
 # tail
 sudo apt update
