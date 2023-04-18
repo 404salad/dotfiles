@@ -2,7 +2,7 @@
 
 # directory management
 cd ~
-sudo mkdir 	
+# sudo mkdir 	
 # essentials apps
 sudo apt install neovim -y
 sudo apt install firefox -y
@@ -18,7 +18,7 @@ sudo apt install rustc -y
 sudo apt install cargo -y
 sudo cargo install porsmo -y
 
-#for gnome themes	
+# for gnome themes	
 sudo apt install gnome-tweaks -y
 
 # tail
