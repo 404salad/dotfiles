@@ -9,7 +9,7 @@ sudo apt install firefox -y
 sudo apt install vlc -y
 sudo apt install audacity -y
 sudo apt install gimp -y
-sudo apt install gedit -y
+sudo apt install tcl-dev -y
 
 # coding
 sudo apt install tmux -y
