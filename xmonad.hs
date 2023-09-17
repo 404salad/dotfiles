@@ -32,7 +32,7 @@ myBorderWidth   = 2
 -- ("right alt"), which does not conflict with emacs keybindings. The
 -- "windows key" is usually mod4Mask.
 --
-myModMask       = mod1Mask
+myModMask       = mod4Mask
 
 -- The default number of workspaces (virtual screens) and their names.
 -- By default we use numeric strings, but any string may be used as a
@@ -113,9 +113,9 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm              , xK_period), sendMessage (IncMasterN (-1)))
 
     -- sahil wrote this on his own :> for volume control
-    , ((modm              , xK_F2     ), spawn "amixer set Master 5%-")
+    , ((modm .|. mod1Mask , xK_2     ), spawn "amixer set Master 5%-")
 
-    , ((modm              , xK_F3     ), spawn "amixer set Master 5%+")
+    , ((modm .|. mod1Mask , xK_3     ), spawn "amixer set Master 5%+")
     
     -- for brightness control
 
@@ -248,6 +248,7 @@ myLogHook = return ()
 -- By default, do nothing.
 myStartupHook = do
     spawnOnce "nitrogen --restore &"
+    spawnOnce "sudo tlp start &"
 
 ------------------------------------------------------------------------
 -- Now run xmonad with all the defaults we set up.
