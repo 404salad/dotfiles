@@ -1,7 +1,6 @@
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
-
 # If not running interactively, don't do anything
 case $- in
     *i*) ;;
@@ -87,13 +86,14 @@ fi
 # colored GCC warnings and errors
 #export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
 
-# some more ls aliases
+# aliases
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
 alias moon='bash ~/scripts/brightness.sh'  
 alias obsidian='~/zapps/Obsidian-1.3.5.AppImage &'  
 alias firefox='flatpak run org.mozilla.firefox &'
+alias cl='clear'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
