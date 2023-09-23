@@ -120,6 +120,11 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm .|. mod1Mask , xK_1     ), spawn "amixer -D pulse set Master 1+ toggle")
     
     -- for brightness control
+    
+    , ((modm .|. mod1Mask , xK_5     ), spawn "sudo moon +5")
+
+    , ((modm .|. mod1Mask , xK_6     ), spawn "sudo moon -5")
+    
 
     -- Toggle the status bar gap
     -- Use this binding with avoidStruts from Hooks.ManageDocks.
