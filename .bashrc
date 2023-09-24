@@ -6,7 +6,6 @@ case $- in
     *i*) ;;
       *) return;;
 esac
-
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
 HISTCONTROL=ignoreboth
@@ -94,6 +93,8 @@ alias moon='bash ~/scripts/brightness.sh'
 alias obsidian='~/zapps/Obsidian-1.3.5.AppImage &'  
 alias firefox='flatpak run org.mozilla.firefox &'
 alias cl='clear'
+alias generate='cp -r ~/.templates/$1'
+alias runj='bash ~/scripts/runjava.sh'
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
