@@ -120,7 +120,7 @@ myKeys conf@(XConfig {XMonad.modMask = modm}) = M.fromList $
     , ((modm .|. mod1Mask , xK_1     ), spawn "amixer -D pulse set Master 1+ toggle")
     
     -- for brightness control
-    
+
     , ((modm .|. mod1Mask , xK_5     ), spawn "sudo moon +5")
 
     , ((modm .|. mod1Mask , xK_6     ), spawn "sudo moon -5")
@@ -255,6 +255,7 @@ myLogHook = return ()
 -- By default, do nothing.
 myStartupHook = do
     spawnOnce "nitrogen --restore &"
+    spawnOnce "nohup ./battery_checker.sh &"
     spawnOnce "sudo tlp start &"
 
 ------------------------------------------------------------------------
