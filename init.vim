@@ -5,6 +5,7 @@ set tabstop=4
 set shiftwidth=4
 set expandtab
 set number
+"set mouse
 "colorscheme desert
 "
 call plug#begin('~/.local/share/nvim/site/plugged')
