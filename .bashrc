@@ -74,8 +74,8 @@ esac
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     alias ls='ls --color=auto'
-    #alias dir='dir --color=auto'
-    #alias vdir='vdir --color=auto'
+    alias dir='dir --color=auto'
+    alias vdir='vdir --color=auto'
 
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
@@ -94,8 +94,12 @@ alias obsidian='~/zapps/Obsidian-1.3.5.AppImage &'
 alias firefox='flatpak run org.mozilla.firefox &'
 alias firefoxw='/home/thecuber/zapps/firefox/firefox &'
 alias cl='clear'
+alias start='open'
 alias generate='cp -r ~/.templates/$1'
 alias runj='bash ~/scripts/runjava.sh'
+alias nvim='~/zapps/nvim.appimage'
+alias switch="cd /media/sun/0a14f9a0-73b6-4ead-a095-f34a3e497331/home/thecuber"
+alias gitx="git add .; git commit ;git push"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
@@ -121,7 +125,7 @@ if ! shopt -oq posix; then
   fi
 fi
 
-export "PATH=$PATH:/home/thecuber/.cargo/bin"
+# export "PATH=$PATH:/home/thecuber/.cargo/bin"
 [[ -d "/opt/yarn-v1.22.19/bin" ]] && PATH="$PATH:/opt/yarn-v1.22.19/bin"
 [[ -d "/home/thecuber/Downloads/node-v16.13.0-linux-x64/bin" ]] && PATH="$PATH:/home/thecuber/Downloads/node-v16.13.0-linux-x64/bin"
 [[ -d "/home/thecuber/zapps" ]] && PATH="$PATH:/home/thecuber/zapps"
@@ -131,7 +135,7 @@ export "PATH=$PATH:/home/thecuber/.cargo/bin"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
 
-. "$HOME/.cargo/env"
+# . "$HOME/.cargo/env"
 
 
 
