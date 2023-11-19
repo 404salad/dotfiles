@@ -102,6 +102,8 @@ alias switch="cd /media/sun/0a14f9a0-73b6-4ead-a095-f34a3e497331/home/thecuber"
 alias gitx="git add .; git commit ;git push"
 alias leet="open https://leetcode.com/ &"
 alias sleep="systemctl suspend"
+alias find="find . -name"
+
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
