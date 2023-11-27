@@ -103,6 +103,7 @@ alias gitx="git add .; git commit ;git push"
 alias leet="open https://leetcode.com/ &"
 alias sleep="systemctl suspend"
 alias find="find . -name"
+alias diss="objdump -d -Mintel"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
