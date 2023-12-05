@@ -104,6 +104,7 @@ alias leet="open https://leetcode.com/ &"
 alias sleep="systemctl suspend"
 alias find="find . -name"
 alias diss="objdump -d -Mintel"
+alias copy="xclip -selection clipboard"
 
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
