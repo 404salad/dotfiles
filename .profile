@@ -7,6 +7,7 @@
 # the default umask is set in /etc/profile; for setting the umask
 # for ssh logins, install and configure the libpam-umask package.
 #umask 022
+
 # if running bash
 if [ -n "$BASH_VERSION" ]; then
     # include .bashrc if it exists
@@ -26,4 +27,4 @@ if [ -d "$HOME/.local/bin" ] ; then
 fi
 . "$HOME/.cargo/env"
 
-/usr/bin/setxkbmap -option "caps:swapescape"
+ xmodmap -e "clear lock" -e "keycode 66 = Escape" -e "keycode 9 = Caps_Lock" 
