@@ -57,4 +57,9 @@ vim.diagnostic.config({
 -- themeeee
 vim.cmd.colorscheme("retrobox")
 
+ -- Auto-close brackets in insert mode
+local prs = { ['('] = ')', ['['] = ']', ['{'] = '}', ['"'] = '"', ["'"] = "'" }
 
+for open, close in pairs(prs) do
+    vim.api.nvim_set_keymap('i', open, open .. close .. '<Left>', { noremap = true, silent = true })
+end
