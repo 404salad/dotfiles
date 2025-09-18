@@ -12,6 +12,11 @@ vim.pack.add{
 -- Leader key
 vim.g.mapleader = " "
 
+-- disable mouse to prevent the kitty bug which causes nvim to crash whenever i come back
+vim.opt.mouse = ""
+
+-- for yanking into os clipboard (needs a dependency)
+vim.opt.clipboard:append("unnamedplus")
 
 --infite undo
 vim.opt.undofile = true
