@@ -6,12 +6,22 @@ rnj() {
   javac "$1.java" && java "$1"
 }
 
+rgf() {
+  rg --files | rg "$@"
+}
+
+run_codeforces() {
+  name="${1%.cc}"
+  clang++ -std=c++17 -O2 -Wall -ggdb -Wextra "$name.cc" -o "$name" && "./$name"
+}
+
 alias gitx='git add .; git commit; git push;'
 alias runj='rnj'
 alias l='ls'
+alias ls='ls -tr'
 alias cl='clear'
 
-alias run='f() { clang++ -std=c++17 -O2 -Wall -ggdb -Wextra "$1.cc" -o "$1" && ./"$1"; }; f'
+alias run='run_codeforces'
 alias white='play -n synth pinknoise vol 0.1 repeat 1'
 alias now="awk '/^$/{exit} !/^\[x\]/' ~/0now"
 alias yay="nvim ~/0now"
